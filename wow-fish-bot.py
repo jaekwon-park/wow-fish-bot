@@ -66,18 +66,18 @@ if __name__ == "__main__":
                        duration=5)    
     while flag_exit is False:
         if is_stop == False:
-            if GetWindowText(GetForegroundWindow()) != "World of Warcraft":
+            if GetWindowText(GetForegroundWindow()) != "월드 오브 워크래프트":
                 if wait_mes == 5:
                     wait_mes = 0
                     toaster.show_toast(app,
-                                       "Waiting for World of Warcraft"
-                                       + " as active window",
+                                       "월드 오브 워크래프트 창이 활성화 되기를"
+                                       + " 기다리고 있습니다.",
                                        icon_path='wow-fish-bot.ico',
                                        duration=5)                  
                 # print("Waiting for World of Warcraft as active window")
                 systray.update(
                     hover_text=app
-                    + " - Waiting for World of Warcraft as active window")
+                    + " - 월드 오브 워크래프트 창이 활성화 되기를 기다리고 있습니다.")
                 wait_mes += 1
                 time.sleep(2)
             else:
